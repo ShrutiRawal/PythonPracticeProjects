@@ -9,6 +9,6 @@ while(True):
         elif(guess<num):
             print("Your guess is less than the number")
     print("You got that right !")
-    check = int(input("Do you want to play again?Enter 1 for yes and 0 for no - "))
+    check = int(input("Do you want to play again? Enter 1 for yes and 0 for no - "))
     if(check==0):
         break
