@@ -10,23 +10,23 @@ class Snake:
         self.direction = Vector2(0, 0)
         self.new_block = False
 
-        self.head_up = pygame.image.load('head_up.png').convert_alpha()
-        self.head_down = pygame.image.load('head_down.png').convert_alpha()
-        self.head_right = pygame.image.load('head_right.png').convert_alpha()
-        self.head_left = pygame.image.load('head_left.png').convert_alpha()
+        self.head_up = pygame.image.load('SnakeGameRes/head_up.png').convert_alpha()
+        self.head_down = pygame.image.load('SnakeGameRes/head_down.png').convert_alpha()
+        self.head_right = pygame.image.load('SnakeGameRes/head_right.png').convert_alpha()
+        self.head_left = pygame.image.load('SnakeGameRes/head_left.png').convert_alpha()
 
-        self.tail_up = pygame.image.load('tail_up.png').convert_alpha()
-        self.tail_down = pygame.image.load('tail_down.png').convert_alpha()
-        self.tail_right = pygame.image.load('tail_right.png').convert_alpha()
-        self.tail_left = pygame.image.load('tail_left.png').convert_alpha()
+        self.tail_up = pygame.image.load('SnakeGameRes/tail_up.png').convert_alpha()
+        self.tail_down = pygame.image.load('SnakeGameRes/tail_down.png').convert_alpha()
+        self.tail_right = pygame.image.load('SnakeGameRes/tail_right.png').convert_alpha()
+        self.tail_left = pygame.image.load('SnakeGameRes/tail_left.png').convert_alpha()
 
-        self.body_vertical = pygame.image.load('body_vertical.png').convert_alpha()
-        self.body_horizontal = pygame.image.load('body_horizontal.png').convert_alpha()
+        self.body_vertical = pygame.image.load('SnakeGameRes/body_vertical.png').convert_alpha()
+        self.body_horizontal = pygame.image.load('SnakeGameRes/body_horizontal.png').convert_alpha()
 
-        self.body_tr = pygame.image.load('body_tr.png').convert_alpha()
-        self.body_tl = pygame.image.load('body_tl.png').convert_alpha()
-        self.body_br = pygame.image.load('body_br.png').convert_alpha()
-        self.body_bl = pygame.image.load('body_bl.png').convert_alpha()
+        self.body_tr = pygame.image.load('SnakeGameRes/body_tr.png').convert_alpha()
+        self.body_tl = pygame.image.load('SnakeGameRes/body_tl.png').convert_alpha()
+        self.body_br = pygame.image.load('SnakeGameRes/body_br.png').convert_alpha()
+        self.body_bl = pygame.image.load('SnakeGameRes/body_bl.png').convert_alpha()
 
     def draw_snake(self):
         self.update_head_graphics()
@@ -171,8 +171,8 @@ cell_size = 40
 cell_no = 20
 screen = pygame.display.set_mode((cell_size*cell_no, cell_size*cell_no))
 clock = pygame.time.Clock()
-apple = pygame.image.load('apple.png').convert_alpha()
-game_font = pygame.font.Font('PoetsenOne-Regular.ttf', 25)
+apple = pygame.image.load('SnakeGameRes/apple.png').convert_alpha()
+game_font = pygame.font.Font('SnakeGameRes/PoetsenOne-Regular.ttf', 25)
 
 main_game = Main()
 
